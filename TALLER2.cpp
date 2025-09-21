@@ -28,9 +28,9 @@ int main() {
 
         switch (opcion) {
             case 1: {
-                // === EJERCICIO 1: MEDIANA DE UN ARRAY ===
+              
                 cout << "\n--- 1. Mediana de un array ---\n";
-                int n_ingresados; // Aquí se almacena la cantidad de números que se van a ingresar para calcular la mediana
+                int n_ingresados; 
                 cout << "Cuantos numeros quieres ingresar?: ";
                       cin >> n_ingresados;
                 int numeros_ingresados[100];
@@ -68,9 +68,9 @@ int main() {
                 break;
             }
             case 2: {
-                // === EJERCICIO 2: BÚSQUEDA BINARIA ===
+               
                 cout << "\n--- 2. Busqueda binaria ---\n";
-                // Este es el array ordenado donde se va a realizar la búsqueda.
+                // Este es el array ordenado donde se va a realizar la bÃºsqueda.
                 int array_a_buscar[] = {11, 22, 33, 44, 55, 66, 77, 88, 99};
                 int tamano_array = 9;
                 cout << "Array a buscar: ";
@@ -106,7 +106,7 @@ int main() {
                 break;
             }
             case 3: {
-                // === EJERCICIO 3: TRANSPUESTA DE UNA MATRIZ ===
+                
                 cout << "\n--- 3. Transpuesta de una matriz ---\n";
                 int matriz_original[2][3] = {{1, 2, 3}, {4, 5, 6}};
                 int filas_matriz = 2, columnas_matriz = 3;
@@ -139,7 +139,7 @@ int main() {
                 break;
             }
             case 4: {
-                // === EJERCICIO 4: SISTEMA DE INVENTARIO SIMPLE ===
+             
                 cout << "\n--- 4. Sistema de inventario simple ---\n";
                 const int CAPACIDAD_MAXIMA = 50;
                 string nombres_productos[CAPACIDAD_MAXIMA];
@@ -182,7 +182,7 @@ int main() {
                 break;
             }
             case 5: {
-                // === EJERCICIO 5: ORDENAMIENTO POR SELECCIÓN ===
+             
                 cout << "\n--- 5. Ordenamiento por seleccion ---\n";
                 int cantidad_numeros;
                 cout << "Cuantos numeros quieres ordenar?: ";
@@ -212,10 +212,10 @@ int main() {
                 break;
             }
             case 6: {
-                // === EJERCICIO 6: ENCONTRAR ELEMENTOS DUPLICADOS ===
+           
                 cout << "\n--- 6. Encontrar elementos duplicados ---\n";
                 int cantidad_numeros_dup;
-                cout << "Cuantos numeros quieres ingresar?: ";
+                        cout << "Cuantos numeros quieres ingresar?: ";
                 cin >> cantidad_numeros_dup;
                 int array_con_duplicados[100];
                 cout << "Ingresa los numeros: ";
@@ -238,13 +238,11 @@ int main() {
                 }
                 break;
             }
-            case 7: {
-                // === EJERCICIO 7: JUEGO DE TRES EN RAYA ===
-                cout << "\n--- 7. Juego de tres en raya ---\n";
-                char tablero[3][3] = {{'1','2','3'}, {'4','5','6'}, {'7','8','9'}};
+            case 7: {                cout << "\n--- 7. Juego de tres en raya ---\n";
+                    char tablero[3][3] = {{'1','2','3'}, {'4','5','6'}, {'7','8','9'}};
                 char jugador_actual = 'X';
                 int eleccion_casilla;
-                bool hay_ganador = false;
+                        bool hay_ganador = false;
 
                 for (int turno = 0; turno < 9; turno++) {
                     cout << "\n";
@@ -275,7 +273,7 @@ int main() {
                         }
 
                         if (hay_ganador) {
-                            cout << "¡El jugador " << jugador_actual << " ha ganado!\n";
+                            cout << "Â¡El jugador " << jugador_actual << " ha ganado!\n";
                             break;
                         }
 
@@ -287,16 +285,16 @@ int main() {
                     }
                 }
 
-                if (!hay_ganador) cout << "¡Es un empate!\n";
+                if (!hay_ganador) cout << "Â¡Es un empate!\n";
                 cout << "\nTablero final:\n";
                 for (int i = 0; i < 3; i++) {
-                    cout << " " << tablero[i][0] << " | " << tablero[i][1] << " | " << tablero[i][2] << endl;
+                                cout << " " << tablero[i][0] << " | " << tablero[i][1] << " | " << tablero[i][2] << endl;
                     if (i < 2) cout << "---|---|---\n";
                 }
                 break;
             }
             case 8:
-                cout << "\nSaliendo del programa. ¡Hasta luego!" << endl;
+                cout << "\nSaliendo del programa. Â¡Hasta luego!" << endl;
                 break;
             default:
                 cout << "\nOpcion no valida. Por favor, elige un numero del 1 al 8." << endl;
@@ -306,3 +304,4 @@ int main() {
 
     return 0;
 }
+
